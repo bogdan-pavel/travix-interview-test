@@ -1,50 +1,53 @@
 package com.travix.medusa.busyflights.domain.toughjet;
 
+import java.util.Date;
+
 public class ToughJetRequest {
 
-    private String from;
-    private String to;
-    private String outboundDate;
-    private String inboundDate;
-    private int numberOfAdults;
+    private String origin;
+    private String destination;
+    private Date departureDate;
+    private Date returnDate;
+    //used wrapper instead of primitives to avoid default in case of unset value
+    private Integer numberOfPassengers;
 
-    public String getFrom() {
-        return from;
+    public String getOrigin() {
+        return origin;
     }
 
-    public void setFrom(final String from) {
-        this.from = from;
+    public void setOrigin(String origin) {
+        this.origin = origin;
     }
 
-    public String getTo() {
-        return to;
+    public String getDestination() {
+        return destination;
     }
 
-    public void setTo(final String to) {
-        this.to = to;
+    public void setDestination(String destination) {
+        this.destination = destination;
     }
 
-    public String getOutboundDate() {
-        return outboundDate;
+    public Date getDepartureDate() {
+        return departureDate;
     }
 
-    public void setOutboundDate(final String outboundDate) {
-        this.outboundDate = outboundDate;
+    public void setDepartureDate(Date departureDate) {
+        this.departureDate = departureDate;
     }
 
-    public String getInboundDate() {
-        return inboundDate;
+    public Date getReturnDate() {
+        return returnDate;
     }
 
-    public void setInboundDate(final String inboundDate) {
-        this.inboundDate = inboundDate;
+    public void setReturnDate(Date returnDate) {
+        this.returnDate = returnDate;
     }
 
-    public int getNumberOfAdults() {
-        return numberOfAdults;
+    public Integer getNumberOfPassengers() {
+        return numberOfPassengers;
     }
 
-    public void setNumberOfAdults(final int numberOfAdults) {
-        this.numberOfAdults = numberOfAdults;
+    public void setNumberOfPassengers(Integer numberOfPassengers) {
+        this.numberOfPassengers = numberOfPassengers;
     }
 }

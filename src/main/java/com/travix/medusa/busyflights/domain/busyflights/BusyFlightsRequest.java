@@ -6,13 +6,14 @@ public class BusyFlightsRequest {
     private String destination;
     private String departureDate;
     private String returnDate;
-    private int numberOfPassengers;
+    //used wrapper instead of primitives to avoid default in case of unset value
+    private Integer numberOfPassengers;
 
     public String getOrigin() {
         return origin;
     }
 
-    public void setOrigin(final String origin) {
+    public void setOrigin(String origin) {
         this.origin = origin;
     }
 
@@ -20,7 +21,7 @@ public class BusyFlightsRequest {
         return destination;
     }
 
-    public void setDestination(final String destination) {
+    public void setDestination(String destination) {
         this.destination = destination;
     }
 
@@ -28,7 +29,7 @@ public class BusyFlightsRequest {
         return departureDate;
     }
 
-    public void setDepartureDate(final String departureDate) {
+    public void setDepartureDate(String departureDate) {
         this.departureDate = departureDate;
     }
 
@@ -36,15 +37,15 @@ public class BusyFlightsRequest {
         return returnDate;
     }
 
-    public void setReturnDate(final String returnDate) {
+    public void setReturnDate(String returnDate) {
         this.returnDate = returnDate;
     }
 
-    public int getNumberOfPassengers() {
+    public Integer getNumberOfPassengers() {
         return numberOfPassengers;
     }
 
-    public void setNumberOfPassengers(final int numberOfPassengers) {
+    public void setNumberOfPassengers(Integer numberOfPassengers) {
         this.numberOfPassengers = numberOfPassengers;
     }
 }

@@ -1,8 +1,8 @@
-package com.travix.medusa.busyflights.domain.toughjet;
+package com.travix.medusa.busyflights.domain.busyflights;
 
 import java.util.Date;
 
-public class ToughJetResponse {
+public class BusyFlightsToughJetResponse {
 
     private String carrier;
     //used wrapper instead of primitives to avoid default in case of unset value
